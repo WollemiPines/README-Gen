@@ -2,10 +2,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+
 // TODO: Create an array of questions for user input
 // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions GitHub username
 const promptUser = () => {
-  return inquirer.prompt([  
+  return  inquirer.prompt([  
+  {
+    type: 'input',
+    name: 'title',
+    message: 'Project Title:',
+  },
   {
     type: 'input',
     name: 'description',
@@ -18,7 +24,7 @@ const promptUser = () => {
   },
   {
     type: 'input',
-    name: 'Usage',
+    name: 'usage',
     message: 'Usage Guidelines:',
   },
   {
@@ -47,15 +53,52 @@ const promptUser = () => {
     name: 'licence',
     choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
   },]
-) .then((data) => {
-  const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
+)};
 
-  fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-    err ? console.log(err) : console.log('Success!')
-  );
-});}
 
-promptUser();
+
+const genReadMe = ({title, description, install, usage, contribue, test, email, github, licence}) =>
+
+`# ${title}
+
+## Project Description
+${description}
+
+## Table of Contents
+1. 
+
+## Installation Instructions:
+${install}
+
+## Usage Guidelines:
+${usage}
+
+## Contribution guidelines:
+${contribue}
+
+## Test Instructions:
+${test}
+
+## Questions
+Please email any questions about this project to: ${email}
+or contact me though github: ${github}
+
+## License
+${licence}`
+;
+
+
+const init = () => {
+  promptUser()
+    // Use writeFileSync method to use promises instead of a callback function
+    .then((responses) => fs.writeFileSync('ReadMeTest.md', genReadMe(responses)))
+    .then(() => console.log('Successfully wrote to ReadMeTest.md'))
+    .catch((err) => console.error(err));
+};
+
+init();
+
+
 
 /*
 // TODO: Create a function to write README file
