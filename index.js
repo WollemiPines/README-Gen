@@ -65,33 +65,33 @@ const genReadMe = ({title, description, install, usage, contribue, test, email, 
 
 ## Table of Contents
 1. [Project Description](#project-description)
-1. Installation Instructions
-1. Usage Guidelines
-1. Contribution guidelines
-1. Test Instructions
-1. Questions
-1. License
+1. [Installation Instructions](#install)
+1. [Usage Guidelines](#usage)
+1. [Contribution guidelines](#contribute)
+1. [Test Instructions](#test)
+1. [Questions](#questions)
+1. [License](#licence)
 
-##<a name="project-description"></a>Project Description
+## Project Description <a name="project-description"></a>
 ${description}
 
-## Installation Instructions:
+## Installation Instructions: <a name="install"></a>
 ${install}
 
-## Usage Guidelines:
+## Usage Guidelines: <a name="usage"></a>
 ${usage}
 
-## Contribution guidelines:
+## Contribution guidelines: <a name="contribute"></a>
 ${contribue}
 
-## Test Instructions:
+## Test Instructions: <a name="test"></a>
 ${test}
 
-## Questions
+## Questions <a name="questions"></a>
 Please email any questions about this project to: ${email}
 or contact me though my github: ${github}
 
-## License
+## License <a name="licence"></a>
 ${licence}`
 ;
 
