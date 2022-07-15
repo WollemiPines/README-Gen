@@ -1,6 +1,7 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = ('../generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -61,11 +62,18 @@ const genReadMe = ({title, description, install, usage, contribue, test, email, 
 
 `# ${title}
 
-## Project Description
-${description}
 
 ## Table of Contents
-1. 
+1. [Project Description](#project-description)
+1. Installation Instructions
+1. Usage Guidelines
+1. Contribution guidelines
+1. Test Instructions
+1. Questions
+1. License
+
+##<a name="project-description"></a>Project Description
+${description}
 
 ## Installation Instructions:
 ${install}
@@ -81,7 +89,7 @@ ${test}
 
 ## Questions
 Please email any questions about this project to: ${email}
-or contact me though github: ${github}
+or contact me though my github: ${github}
 
 ## License
 ${licence}`
@@ -90,9 +98,10 @@ ${licence}`
 
 const init = () => {
   promptUser()
+  
     // Use writeFileSync method to use promises instead of a callback function
-    .then((responses) => fs.writeFileSync('ReadMeTest.md', genReadMe(responses)))
-    .then(() => console.log('Successfully wrote to ReadMeTest.md'))
+    .then((responses) => fs.writeFileSync('ReadMe_'+responses.title +'.md', genReadMe(responses)))
+    .then(() => console.log('Successfully wrote to ReadMe_' +'.md'))
     .catch((err) => console.error(err));
 };
 
