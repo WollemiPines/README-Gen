@@ -19,18 +19,18 @@ Generates a custom README file for any project based on user inputs.
 Clone this repo onto your computer. Navigate to the correct directory on terminal and run NPM install inquirer. Then type node index.js to run the program.
 
 ## Usage Guidelines: <a name="usage"></a>
-Input text based on the programs prompts and select the realevent licence/s.
+Input text based on the programs prompts and select the relevant license/s.
 
 ## Contribution guidelines: <a name="contribute"></a>
 Create a fork of this repo to work on expanding the functionality
 
 ## Test Instructions: <a name="test"></a>
-See Useage Guidelines.
+See Usage Guidelines.
 
 ## Questions <a name="questions"></a>
 Please email any questions about this project to: Chrisw1096@gmail.com
-/n or contact me though my github: 
-/n [Wollemipines:](https://github.com/Wollemipines)
+or contact me though my github: 
+[Wollemipines:](https://github.com/Wollemipines)
 
 ## License <a name="licence"></a>
 Licensed under the Apache License, Version 2.0 (the "License");

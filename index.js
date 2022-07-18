@@ -179,8 +179,7 @@ ${test}
 
 ## Questions <a name="questions"></a>
 Please email any questions about this project to: ${email}
-/n or contact me though my github: 
-/n [${github}:](https://github.com/${github})
+or contact me though my github:[${github}:](https://github.com/${github})
 
 ## License <a name="licence"></a>
 ${licenceMarkdown(licence)}
