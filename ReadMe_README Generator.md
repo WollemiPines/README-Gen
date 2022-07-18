@@ -1,7 +1,10 @@
-# 1
-
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
     
+
+# README Generator
+
+## Project Description <a name="project-description"></a>
+Generates a custom README file for any project based on user inputs.
 
 ## Table of Contents
 1. [Project Description](#project-description)
@@ -12,25 +15,22 @@
 1. [Questions](#questions)
 1. [License](#licence)
 
-## Project Description <a name="project-description"></a>
-sa
-
 ## Installation Instructions: <a name="install"></a>
-sa
+Clone this repo onto your computer. Navigate to the correct directory on terminal and run NPM install inquirer. Then type node index.js to run the program.
 
 ## Usage Guidelines: <a name="usage"></a>
-sad
+Input text based on the programs prompts and select the realevent licence/s.
 
 ## Contribution guidelines: <a name="contribute"></a>
-asd
+Create a fork of this repo to work on expanding the functionality
 
 ## Test Instructions: <a name="test"></a>
-asd
+See Useage Guidelines.
 
 ## Questions <a name="questions"></a>
-Please email any questions about this project to: sad
+Please email any questions about this project to: Chrisw1096@gmail.com
 /n or contact me though my github: 
-/n [asd:](https://github.com/asd)
+/n [Wollemipines:](https://github.com/Wollemipines)
 
 ## License <a name="licence"></a>
 Licensed under the Apache License, Version 2.0 (the "License");
