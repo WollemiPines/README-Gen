@@ -20,6 +20,7 @@ Clone this repo onto your computer. Navigate to the correct directory on termina
 
 ## Usage Guidelines: <a name="usage"></a>
 Input text based on the programs prompts and select the relevant license/s.
+See example video here: https://drive.google.com/file/d/1HNjShTR-lH1FN7O_t7t9cH3WFmy9QqVd/view
 
 ## Contribution guidelines: <a name="contribute"></a>
 Create a fork of this repo to work on expanding the functionality
